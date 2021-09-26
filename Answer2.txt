@@ -1,0 +1,30 @@
+import json
+d1={
+    "slot": 1, "name": "John",
+    "slot": 2, "name": "Jane",
+    "slot": 2, "name": "Diana"
+}
+
+d2={
+    "status": "confirmed",
+    "status": "confirmed",
+    "status": "confirmed"
+}
+d3={
+    "slot": 2, "name": "Diana",
+    "slot": 2, "name": "Riker",
+    "slot": 2, "name": "Diana"
+}
+
+d4={
+    "status": "canceled booking for Diana in slot 2",
+    "status": "confirmed booking for Riker in slot 2",
+    "status": "no booking for the name Diana in slot 2"
+
+}
+
+json_object=json.dumps(d2,indent=4)
+print(json_object)
+
+json_object=json.dumps(d4,indent=4)
+print(json_object)

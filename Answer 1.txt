@@ -1,0 +1,22 @@
+import json
+valid_entries,invalid_entries,count,avg
+n=int(input("enter the range"))
+l=[]
+dict={}
+for i in range(0,n):
+    item =int(input("enter the number"))
+if item>0:
+    dict['item']=item
+    count++
+    valid_entries=count++
+    
+    min(item)
+    max(item)
+    avg=count/len(n)
+else:
+    dict['item']=item
+    count++
+    Invalid_entries=count++
+    
+y = json.dumps(dict)
+print(y)
